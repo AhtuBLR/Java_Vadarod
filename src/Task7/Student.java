@@ -71,9 +71,9 @@ public class Student {
         Student[] result = new Student[count];
         int index = 0;
 
-        for (Student s : students) {
-            if (s.averageMark > mark) {
-                result[index++] = s;
+        for (Student st : students) {
+            if (st.averageMark > mark) {
+                result[index++] = st;
             }
         }
 
