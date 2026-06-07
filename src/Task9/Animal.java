@@ -4,11 +4,11 @@ package Task9;
 Поля в классе животное: окрас, максимальная продолжительность жизни, тип еды которой питаются (мясо, насекомые, растения).
 Определить методы в классе животное: (издание звуков, животное играет)*/
 public class Animal {
-    private String color;
-    private int maxLifePeriod;
-    private String mealType; //мясо, насекомые, растения
-    private int id;
-    private static int count;
+    protected String color;
+    protected int maxLifePeriod;
+    protected String mealType; //мясо, насекомые, растения
+    protected int id;
+    protected static int count;
 
     public Animal(String color, int maxLifePeriod, String mealType) {
         this.color = color;

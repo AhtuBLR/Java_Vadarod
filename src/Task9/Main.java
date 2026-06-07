@@ -8,11 +8,11 @@ public class Main {
         Zoo zoo = new Zoo();
 
         Bird bird1 = new Bird("Серый", 16, "грызуны,мелкие птицы, насекомые", "Сокол", 3300);
-        Bird bird2 = new Bird("Черный", 18, "насекомые, черви, личинки", "Грач", 1500);
+        Bird bird2 = new Bird("Серый", 16, "грызуны,мелкие птицы, насекомые", "Сокол", 3300);
         Bird bird3 = new Bird("Серый", 18, "насекомые, черви, падаль", "Ворона", 6300);
 
         Dog dog1 = new Dog("бело-рыжий", 15, "мясо", "Леди", "Джек рассел терьер", 6);
-        Dog dog2 = new Dog("черно-серый", 18, "мясо", "Майя", "Восточно-европеская овчарка", 40);
+        Dog dog2 = new Dog("бело-рыжий", 15, "мясо", "Леди", "Джек рассел терьер", 6);
         Dog dog3 = new Dog("коричневый", 14, "сухой корм", "Чарли", "Пудель", 8);
 
         Lion lion1 = new Lion("желто-серый", 20, "зебра");
@@ -40,5 +40,30 @@ public class Main {
         System.out.println("Информация о всех животных зоопарка");
         zoo.showAllAnimalInfo();
 
+        //Вызо методо equals
+        System.out.println(bird1.equals(bird2));
+        System.out.println(bird2.equals(bird3));
+        System.out.println("--------------------");
+
+        System.out.println(dog1.equals(dog2));
+        System.out.println(dog2.equals(dog3));
+        System.out.println("--------------------");
+
+        //Вызов метода hashCode
+        System.out.println(bird1.hashCode());
+        System.out.println(bird2.hashCode());
+        System.out.println("--------------------");
+
+        System.out.println(bird1.hashCode());
+        System.out.println(bird3.hashCode());
+        System.out.println("--------------------");
+
+        System.out.println(dog1.hashCode());
+        System.out.println(dog2.hashCode());
+        System.out.println("--------------------");
+
+        System.out.println(dog1.hashCode());
+        System.out.println(dog3.hashCode());
+        System.out.println("--------------------");
     }
 }

@@ -17,6 +17,30 @@ public class Dog extends Animal {
         this.averageWeight = averageWeight;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public int getAverageWeight() {
+        return averageWeight;
+    }
+
+    public void setAverageWeight(int averageWeight) {
+        this.averageWeight = averageWeight;
+    }
+
     //Метод лаять
     public void bark() {
         System.out.println(name + " лает.");
@@ -52,5 +76,24 @@ public class Dog extends Animal {
     @Override
     public String toString() {
         return super.toString() + " Собака по кличке: " + name + ", " + "Порода: " + breed + ", " + "Средний вес: " + averageWeight + ".";
+    }
+
+//Переопределить метод equals и hashcode в классах Птица и Собака из предыдущего задания.
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Dog)) {
+            return false;
+        }
+        Dog dog = (Dog) obj;
+        if (name.equals(dog.getName()) && breed.equals(dog.getBreed()) && averageWeight == dog.getAverageWeight()) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name.hashCode() + breed.hashCode() + averageWeight;
+        return result;
     }
 }
