@@ -45,7 +45,7 @@ public class Main {
         group2.transferToGroup(group1);
 
         System.out.println("***********************************");
-        System.out.println("После Объединения студентовв одну группу");
+        System.out.println("После Объединения студентов в одну группу");
         System.out.println(faculty1);
 
 // 1.6 Средний балл по группе
@@ -55,13 +55,13 @@ public class Main {
 //метод по смене статуса факультета
         faculty1.updateStatus();
         System.out.println("***********************************");
-        System.out.println("Статус факультета: " + faculty1.getFaculty() + " - " +
-                faculty1.getStatus().getCirilicNameFacultyStatus());
+        System.out.println("Статус факультета " + "(" + faculty1.getFaculty() + ")" + " - " +
+                faculty1.getStatus().getCirilicFacultyStatus());
 
         faculty1.updateStatus();
         System.out.println("***********************************");
-        System.out.println("Статус факультета: " + faculty2.getFaculty() + " - " +
-                faculty2.getStatus().getCirilicNameFacultyStatus());
+        System.out.println("Статус факультета " + "(" + faculty2.getFaculty() + ")"+ " - " +
+                faculty2.getStatus().getCirilicFacultyStatus());
     }
 }
 
