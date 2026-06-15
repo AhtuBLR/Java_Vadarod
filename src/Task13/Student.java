@@ -56,6 +56,7 @@ public class Student {
         this.averageMark = averageMark;
     }
 
+
     public String toString() {
         return "Имя: " + name + ", " + "Фамилия: " + surname + ", " + "Дата рождения: " + dateOfBirth + ", " + "Город: "
                 + cityOfBirth + ", " + "Средняя оценка: " + averageMark;

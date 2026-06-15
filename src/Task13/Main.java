@@ -52,6 +52,16 @@ public class Main {
         System.out.println("***********************************");
         System.out.println("Средний балл группы " + group1.getGroup() + ": " + group1.groupAverageMark());
 
+//метод по смене статуса факультета
+        faculty1.updateStatus();
+        System.out.println("***********************************");
+        System.out.println("Статус факультета: " + faculty1.getFaculty() + " - " +
+                faculty1.getStatus().getCirilicNameFacultyStatus());
+
+        faculty1.updateStatus();
+        System.out.println("***********************************");
+        System.out.println("Статус факультета: " + faculty2.getFaculty() + " - " +
+                faculty2.getStatus().getCirilicNameFacultyStatus());
     }
 }
 
