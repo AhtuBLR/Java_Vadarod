@@ -58,8 +58,6 @@ public class Faculty {
         }
     }
 
-
-
     @Override
     public String toString() {
         return "Факультет: " + faculty + ", " + "Группа: " + groups;

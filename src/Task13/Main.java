@@ -60,8 +60,7 @@ public class Main {
 
         faculty1.updateStatus();
         System.out.println("***********************************");
-        System.out.println("Статус факультета " + "(" + faculty2.getFaculty() + ")"+ " - " +
+        System.out.println("Статус факультета " + "(" + faculty2.getFaculty() + ")" + " - " +
                 faculty2.getStatus().getCirilicFacultyStatus());
     }
 }
-
