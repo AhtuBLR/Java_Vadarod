@@ -3,8 +3,8 @@ package Task16;
 //4. Создать своё непроверяемое исключение NotEnoughMoneyException.
 // В этом классе добавьте поле String errorCode, переопределите гетеры и сетеры.
 
-public class NotEnoughMoneyException extends RuntimeException{
-   private String errorCode;
+public class NotEnoughMoneyException extends RuntimeException {
+    private String errorCode;
 
     public NotEnoughMoneyException(String message, String errorCode) {
         super(message);
@@ -18,6 +18,4 @@ public class NotEnoughMoneyException extends RuntimeException{
     public void setErrorCode(String errorCode) {
         this.errorCode = errorCode;
     }
-
-
 }

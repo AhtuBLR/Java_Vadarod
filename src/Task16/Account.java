@@ -60,6 +60,7 @@ public class Account {
                 ", balance=" + amount +
                 '}';
     }
+
     @Override
     public boolean equals(Object o) {
         Account account = (Account) o;
@@ -69,6 +70,7 @@ public class Account {
         }
         return false;
     }
+
     @Override
     public int hashCode() {
         int result = id + accountNumber.hashCode();
