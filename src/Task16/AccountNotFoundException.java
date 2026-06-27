@@ -2,7 +2,7 @@ package Task16;
 //3. Создать своё непроверяемое исключение AccountNotFoundException.
 // В этом классе добавьте поле String errorCode, переопределите гетеры и сетеры.
 
-public class AccountNotFoundException extends RuntimeException {
+public class AccountNotFoundException extends RuntimeException  {
     private String errorCode;
 
     public AccountNotFoundException(String message, String errorCode) {

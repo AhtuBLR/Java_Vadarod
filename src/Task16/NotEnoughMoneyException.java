@@ -6,6 +6,7 @@ package Task16;
 public class NotEnoughMoneyException extends RuntimeException {
     private String errorCode;
 
+
     public NotEnoughMoneyException(String message, String errorCode) {
         super(message);
         this.errorCode = errorCode;
