@@ -1,11 +1,14 @@
 package Task17;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 public class Car implements Serializable {
 //2.1 Создать объект Автомобиль с полями (Марка автомобиля, максимальная скорость, страна производства).
 //Переопределите метод toString(), equals(), hashcode(), гетеры и сетеры (генерируйте с помощью идеи).
 
+    @Serial
+    private static final long serialVersionUID = -1788130394726742154L;
     private String brand;
     private transient int maxSpeed;
     private String country;
